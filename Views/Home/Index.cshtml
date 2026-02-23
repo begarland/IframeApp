@@ -1,0 +1,39 @@
+﻿</div>@{
+    ViewData["Title"] = "Iframe Messaging POC";
+}
+
+<div >
+
+
+<div class='title'>
+    <h1>Iframe Messaging POC</h1>
+    <button onclick="sendMessage()">Send Message to Iframe</button>
+</div>
+<div>
+
+
+
+<iframe 
+    id="contentful-iframe"
+    src="https://next-iframe-poc.vercel.app/"
+    width="100%"
+    height="750"
+    
+    loading="lazy"
+    style="border:1px solid #ccc;">
+    
+</iframe>
+
+<script>
+    function sendMessage() {
+        const iframe = document.getElementById("contentful-iframe");
+
+        iframe.contentWindow.postMessage(
+            {
+                type: "GREETING",
+                payload: "Hello from ASP.NET 👋"
+            },
+            "*" // replace with specific origin in production
+        );
+    }
+</script>
