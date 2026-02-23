@@ -5,9 +5,15 @@
 <div >
 
 
-<div class='title'>
-    <h1>Iframe Messaging POC</h1>
-    <button onclick="sendMessage()">Send Message to Iframe</button>
+<div class='button-container'>
+    <!-- here is where we choose the productId to send -->
+    <button style="background-color: red" onclick="sendMessage(1)">Item 1</button>
+    <button style="background-color: orange" onclick="sendMessage(2)">Item 2</button>
+    <button style="background-color: yellow; color: black" onclick="sendMessage(3)">Item 3</button>
+    <button style="background-color: green" onclick="sendMessage(4)">Item 4</button>
+    <button style="background-color: blue" onclick="sendMessage(5)">Item 5</button>
+    <button style="background-color: indigo" onclick="sendMessage(6)">Item 6</button>
+    <button style="background-color: violet" onclick="sendMessage(7)">Item 7</button>
 </div>
 <div>
 
@@ -25,13 +31,13 @@
 </iframe>
 
 <script>
-    function sendMessage() {
+    function sendMessage(value) {
         const iframe = document.getElementById("contentful-iframe");
 
         iframe.contentWindow.postMessage(
             {
                 type: "GREETING",
-                payload: "Hello from ASP.NET 👋"
+                payload: {message: "Hello from ASP.NET 👋", productId: value}
             },
             "*" // replace with specific origin in production
         );

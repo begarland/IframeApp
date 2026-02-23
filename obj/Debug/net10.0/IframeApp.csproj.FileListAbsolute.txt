@@ -95,4 +95,4 @@
 /Users/brandygarland/Documents/GitHub/IframeApp/obj/Debug/net10.0/IframeApp.genruntimeconfig.cache
 /Users/brandygarland/Documents/GitHub/IframeApp/obj/Debug/net10.0/ref/IframeApp.dll
 /Users/brandygarland/Documents/GitHub/IframeApp/obj/Debug/net10.0/IframeApp.sourcelink.json
-/Users/brandygarland/Documents/GitHub/IframeApp/obj/Debug/net10.0/compressed/jmzxtznnqd-{0}-fpnynowpom-fpnynowpom.gz
+/Users/brandygarland/Documents/GitHub/IframeApp/obj/Debug/net10.0/compressed/jmzxtznnqd-{0}-9gv3nkor05-9gv3nkor05.gz

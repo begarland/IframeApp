@@ -73,11 +73,12 @@ body.modern-body {
   text-align: center;
 }
 
-.title {
+.button-container {
   display: flex;
-  gap: 200px;
+  gap: 20px;
   justify-content: center;
   margin: 10px;
+  max-width: 100vw;
 }
 
 /* =============================
